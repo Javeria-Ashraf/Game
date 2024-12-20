@@ -1,0 +1,114 @@
+/* Global Reset for all elements */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #548687;
+    text-align: center;
+    overflow: hidden;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.container {
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.game {
+    height: 60vh;
+    width: 60vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5vmin;
+}
+
+.box {
+    color: black;
+    height: 18vmin;
+    width: 18vmin;
+    border-radius: 0.55rem;
+    border: none;
+    background-color: aliceblue;
+    font-size: 9vmin;
+    box-shadow: 0 0 1rem #08085f4d;
+}
+
+#reset,
+#new-btn {
+    padding: 1rem;
+    font-size: 1.25rem;
+    color: white;
+    background-color: black;
+    border-radius: 0.55rem;
+    border: none;
+}
+
+#msg {
+    color: white;
+    font-size: 13vmin;
+}
+
+.msg-container {
+    height: 100vmin;
+    margin-top: 40vh;
+}
+
+.hide {
+    display: none;
+}
+
+/* Small devices (phones, 320px - 480px) */
+@media only screen and (min-width: 200px) and (max-width: 340px)  {
+    .game {
+        width: 30vh;
+        height: 30vh;
+    }
+
+    .box {
+        height: 14vmin;
+        width: 14vmin;
+        font-size: 9vmin;
+    }
+
+    #msg {
+        font-size: 10vmin;
+    }
+
+    #reset, #new-btn {
+        padding: 0.75rem;
+        font-size: 1rem;
+    }
+}
+  
+@media only screen and (min-width: 341px) and (max-width: 450px) {
+    .game {
+        width: 40vh;
+        height: 40vh;
+    }
+
+    .box {
+        height: 14vmin;
+        width: 14vmin;
+        font-size: 9vmin;
+    }
+
+    #msg {
+        font-size: 10vmin;
+    }
+
+    #reset, #new-btn {
+        padding: 0.75rem;
+        font-size: 1rem;
+    }
+}
